@@ -4,13 +4,13 @@ def maxArea(Area, Length) :
 	for i in range(Length) :
 		for j in range(i + 1, Length) :
 		
-		
+			# Calculating the max area
 			area = max(area, min(Area[j], Area[i]) * (j - i))
 	return area
 
-
-a = [ 3, 8, 7, 6 ]
-b = [ 1, 5, 8, 3 ]
+# Driver code
+a = [ 1, 5, 4, 3 ]
+b = [ 3, 1, 2, 4, 5 ]
 
 len1 = len(a)
 print(maxArea(a, len1))
