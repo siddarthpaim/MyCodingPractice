@@ -1,9 +1,7 @@
 
-import java.io.*;
+class WaterTableArea{
 
-class GFG{
-
-public static int maxArea(int[] a)
+public static int WaterTableArea(int[] a)
 {
 
 	int Area = 0;
@@ -22,11 +20,11 @@ public static int maxArea(int[] a)
 
 public static void main(String[] args)
 {
-	int a[] = { 1, 5, 4, 3 };
-	int b[] = { 3, 1, 2, 4, 5 };
+	int a[] = { 6, 3, 8, 1 };
+	int b[] = { 2, 15, 11, 14 };
 
-	System.out.println(maxArea(a));
-	System.out.println(maxArea(b));
+	System.out.println(WaterTableArea(a));
+	System.out.println(WaterTableArea(b));
 }
 }
 
