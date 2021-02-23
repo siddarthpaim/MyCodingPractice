@@ -1,5 +1,5 @@
 
-def maxArea(Area, Length) :
+def WaterTableMaximization(Area, Length) :
 	area = 0
 	for i in range(Length) :
 		for j in range(i + 1, Length) :
@@ -13,8 +13,8 @@ a = [ 3, 8, 7, 6 ]
 b = [ 1, 5, 8, 3 ]
 
 len1 = len(a)
-print(maxArea(a, len1))
+print(WaterTableMaximization(a, len1))
 
 len2 = len(b)
-print(maxArea(b, len2))
+print(WaterTableMaximization(b, len2))
 
