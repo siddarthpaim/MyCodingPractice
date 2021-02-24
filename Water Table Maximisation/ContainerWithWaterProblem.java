@@ -1,7 +1,10 @@
 
-class WaterTableArea{
+// Water Container 
+import java.io.*;
 
-public static int WaterTableArea(int[] a)
+class ContainerWithWaterProblem{
+
+public static int maxArea(int[] a)
 {
 
 	int Area = 0;
@@ -11,20 +14,21 @@ public static int WaterTableArea(int[] a)
 		for(int j = i + 1; j < a.length; j++) 
 		{
 			Area = Math.max(
-				Area, Math.min(a[i], a[j]) * 
-							(j - i));
+				Area, Math.min(a[i], a[j]) * 	(j - i));
 		}
 	}
 	return Area;
 }
 
+// Driver code 
 public static void main(String[] args)
 {
-	int a[] = { 6, 3, 8, 1 };
-	int b[] = { 2, 15, 11, 14 };
+	int a[] = { 10, 15, 6, 3 };
+	int b[] = { 8, 7, 5, 3 };
 
-	System.out.println(WaterTableArea(a));
-	System.out.println(WaterTableArea(b));
+	System.out.println(maxArea(a));
+	System.out.println(maxArea(b));
 }
 }
 
+// This code is contributed by mulchandanimanisha5
