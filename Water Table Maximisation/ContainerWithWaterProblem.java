@@ -1,7 +1,5 @@
 
 
-import java.io.*;
-
 class ContainerWithWaterProblem{
 
 public static int maxArea(int[] a)
