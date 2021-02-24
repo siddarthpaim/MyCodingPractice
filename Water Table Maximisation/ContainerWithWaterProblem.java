@@ -1,5 +1,5 @@
 
-// Water Container 
+
 import java.io.*;
 
 class ContainerWithWaterProblem{
@@ -20,7 +20,6 @@ public static int maxArea(int[] a)
 	return Area;
 }
 
-// Driver code 
 public static void main(String[] args)
 {
 	int a[] = { 10, 15, 6, 3 };
@@ -31,4 +30,4 @@ public static void main(String[] args)
 }
 }
 
-// This code is contributed by mulchandanimanisha5
+
