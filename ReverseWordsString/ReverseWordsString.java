@@ -1,36 +1,20 @@
+import java.util.Stack;
+
 class ReverseWordsString {
-    public void reverse(char[] s, int left, int right) {
-        while (left < right) {
-            char tmp = s[left];
-            s[left++] = s[right];
-            s[right--] = tmp;
+    public String reverseWords(String s) {
+        s.trim();
+        String[] str = s.split("\\s+");
+        Stack<String> stack = new Stack<>();
+        for (int i = 0; i < str.length; i++) {
+            stack.push(str[i]);
         }
-    }
 
-    public void reverseEachWord(String a) {
-        int n = a.length;
-        int start = 0, end = 0;
-
-        while (start < n) {
-
-            while (end < n && a[end] != ' ')
-                ++end;
-
-            reverse(a, start, end - 1);
-
-            start = end + 1;
-            ++end;
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
+            sb.append(" ");
         }
-        
+
+        return sb.toString().trim();
     }
-
-    public static void reverseWords(String a) {
-
-        reverse(a, 0, a.length() - 1);
-
-        reverseEachWord(a);
-    }
-
-
-
 }
