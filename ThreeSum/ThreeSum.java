@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import com.sun.tools.javac.util.List;
+
 public class ThreeSum {
 
     public List<List<Integer>> threeSum(int[] nums) {
