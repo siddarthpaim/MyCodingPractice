@@ -1,3 +1,5 @@
+import java.util.Map;
+
 class RomantoInteger {
 
     static Map<String, Integer> values = new HashMap<>();
