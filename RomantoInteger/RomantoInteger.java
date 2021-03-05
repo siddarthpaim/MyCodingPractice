@@ -1,4 +1,4 @@
-public class RomantoInteger {
+class RomantoInteger {
 
     static Map<String, Integer> values = new HashMap<>();
 
