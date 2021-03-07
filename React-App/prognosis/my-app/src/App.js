@@ -4,8 +4,9 @@ class App extends React.Component {
    render() {
       return (
          <div>
-           Medical Prognosis App
-           Developed by Siddarth Pai
+            <h1>Medical Prognosis</h1>
+            <h2>Preventing Heart Attack and other serious medical conditions</h2>
+            <p>Developed by Siddarth Pai</p>
          </div>
       );
    }
