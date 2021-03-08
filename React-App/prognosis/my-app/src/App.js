@@ -1,10 +1,14 @@
 import React from 'react';
+import logo from './prognosis.png';
 
 class App extends React.Component {
+  
   render() {
     return (
+      
       <div>
-        <h1>Medical Prognosis</h1>
+        <h1>                    Medical Prognosis </h1>
+        <img src={logo} alt="Prognosis"   />
         <h2>Preventing Heart Attack and other serious medical conditions</h2>
       
 
@@ -33,7 +37,7 @@ class App extends React.Component {
           </p>
           <p>
           <label>
-         Blood Oxygen Level : 
+         Blood Oxygen Level (SPO2)
          </label>
           <input type="text" name="SPO2" />
           </p>
@@ -56,6 +60,8 @@ class App extends React.Component {
           <input type="submit" value="submit" />
           </label>
           </p>
+          
+
         </form>
         <p>Developed by Siddarth Pai</p>
       </div>
