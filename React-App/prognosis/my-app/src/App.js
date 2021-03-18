@@ -2,13 +2,6 @@ import React from 'react';
 import logo from './prognosis.png';
 
 class App extends React.Component {
- 
-    state = {
-      background: '#194D33',
-    };
-    handleChangeComplete = (color, event) => {
-      this.setState({ background: color.hex });
-    };
   
   render() {
     return (
@@ -63,14 +56,14 @@ class App extends React.Component {
           </p>
           <p>
           <label>
-            Submit
-          <input type="submit"  value="submit" />
+            By Clicking Send you acknowledge to share your data for analysisn
+            <p></p>
+          <input type="submit" value="Send" />
           </label>
           </p>
           
 
         </form>
-        
         <p>Developed by Siddarth Pai</p>
       </div>
 
